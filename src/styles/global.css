@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+    html {
+        @apply bg-bg-primary text-fg-primary;
+    }
+
+    h1 {
+        @apply text-3xl font-bold my-2;
+    }
+
+    h2 {
+        @apply text-2xl font-bold my-2;
+    }
+
+    h3 {
+        @apply text-xl font-bold my-2;
+    }
+
+    a {
+        @apply inline-block text-link underline hover:no-underline;
+    }
+
+    code {
+        @apply select-all text-accent;
+    }
+
+    ul {
+        @apply list-disc my-1;
+    }
+
+    ol {
+        @apply list-decimal my-1;
+    }
+}
+
+@layer utilities {
+    .pixelated {
+        image-rendering: pixelated;
+    }
+}
+
+:root {
+    color-scheme: dark;
+    --bg-primary: #1a1b26;
+    --fg-primary: #9aa5ce;
+    --accent: #7aa2f7;
+    --link: #bb9af7;
+}
+
+@theme inline {
+    --color-bg-primary: var(--bg-primary);
+    --color-fg-primary: var(--fg-primary);
+    --color-accent: var(--accent);
+    --color-link: var(--link);
+}

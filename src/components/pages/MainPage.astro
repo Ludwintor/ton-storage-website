@@ -1,0 +1,36 @@
+---
+import CoolPhrases from "../interactive/CoolPhrases.svelte";
+import MyBagId from "../interactive/MyBagId.svelte";
+import Tonger from "../ui/Tonger.astro";
+import { Content as HowToContent } from "../markdown/howto.md";
+import { Content as DomainAddressContent } from "../markdown/domainaddress.md";
+---
+
+<main class="flex flex-col justify-center items-center px-8 py-4">
+    <div class="w-full max-w-4xl flex flex-col gap-4">
+        <section>
+            <h1>hello friends, this is lud</h1>
+            <CoolPhrases client:load />
+        </section>
+        <section>
+            <h3>
+                this example website is hosted and served by one of the
+                <a href="https://mytonprovider.org">TON's storage providers</a>
+            </h3>
+            <MyBagId client:load />
+        </section>
+        <section>
+            <HowToContent />
+        </section>
+        <section>
+            <DomainAddressContent />
+        </section>
+        <Tonger />
+        <p>
+            built with ♥
+            by <a href="https://t.me/ludwintor">@ludwintor</a>
+            using <a href="https://astro.build">{Astro.generator}</a>
+            (<a href="https://github.com/Ludwintor/ton-storage-website">source code</a>)
+        </p>
+    </div>
+</main>
