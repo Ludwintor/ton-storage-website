@@ -1,5 +1,5 @@
 # ton-storage-website
-💎💾📄 example website which is hosted in TON storage
+💎💾📄 example website hosted in TON storage
 
 to view TON storage hosted website you must do ONE of the following:
 - download and enable the standalone [TON proxy](https://github.com/xssnick/Tonutils-Proxy)
